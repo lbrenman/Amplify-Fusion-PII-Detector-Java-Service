@@ -1,0 +1,27 @@
+{
+    "piiDetected": true,
+    "nerDetected": true,
+    "detectedTypes": [
+      "EMAIL",
+      "SSN",
+      "CREDIT_CARD",
+      "PHONE",
+      "PERSON",
+      "ORGANIZATION",
+      "LOCATION"
+    ],
+    "counts": {
+      "EMAIL": 1,
+      "SSN": 1,
+      "CREDIT_CARD": 1,
+      "PHONE": 1,
+      "PERSON": 1,
+      "ORGANIZATION": 1,
+      "LOCATION": 1
+    },
+    "freeTextFields": [
+      "notes",
+      "comments"
+    ],
+    "nerError": ""
+  }
