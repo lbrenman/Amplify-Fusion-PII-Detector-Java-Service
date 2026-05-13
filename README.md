@@ -1,4 +1,4 @@
-# Amplify Fusion — PII Detector Java Service (Dedicated Data Plane)
+# Amplify Fusion — PII Detector Java Service
 
 A reusable **Amplify Fusion Java service** that detects and redacts Personally Identifiable Information (PII) from text using two complementary approaches:
 
@@ -6,6 +6,10 @@ A reusable **Amplify Fusion Java service** that detects and redacts Personally I
 - **OpenNLP NER** — detects unstructured PII (person names, organizations, locations) in free-form prose
 
 Requires a **Dedicated Data Plane** with OpenNLP JARs and model files uploaded.
+
+A shared data plane version with string scanning only and no JARs required is available [here](https://gist.github.com/lbrenman/6a78f1b51657e6f5b93bd859ae3593ac).
+
+A sample project export for both are available in this repo. Import the zip file(s) into your Fusion Tenant to test.
 
 ---
 
@@ -283,17 +287,3 @@ The report is returned as a `Map<String, Object>` which Fusion surfaces as a **D
 | Java version | 8+ |
 | OpenNLP version | 2.3.3 |
 | NER model series | 1.5 (MUC-7 trained) |
-
----
-
-## Related
-
-- [Shared Data Plane version](https://gist.github.com/lbrenman/6a78f1b51657e6f5b93bd859ae3593ac) — string scanning only, no JARs required
-
-Sample Project Export in this repo
-
----
-
-## License
-
-MIT
